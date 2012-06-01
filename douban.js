@@ -1,11 +1,20 @@
 var douban = (function() {
+  function appendScript(script_tag){
+    document.getElementsByTagName('head')[0].appendChild(script_tag);
+  }
+
   return {
     showUser: function(options) {
       var url = "http://api.douban.com/people/" + options.user + "/collection?alt=xd&callback=renderJSON";
       if (options.apikey.length > 0) url += "&apikey=" + options.apikey;
       if (options.category.length > 0) url += "&cat=" + options.category;
 
-      $("<script/>").attr("src", url).attr("charset", "utf-8").attr('id', 'douban-json').appendTo($("head")[0]);
+      var script_tag = document.createElement('script');
+      script_tag.setAttribute('type', 'text/javascript');
+      script_tag.setAttribute('src', url);
+      script_tag.setAttribute('charset', 'utf-8');
+
+      appendScript(script_tag);
     }
   };
 })();
