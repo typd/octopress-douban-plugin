@@ -31,11 +31,9 @@ rake deploy
 
 ## TO-DO
 
-1. It doesn't work with Firefox, and I just don't know why. Oops... I will fix it soon.
+1. Add more optional configurations such as display numbers, display specified status(book:wish,reading,read movie:wish,watched and so on)
 
-2. Add more optional configurations such as display numbers, display specified status(book:wish,reading,read movie:wish,watched and so on)
-
-3. Display the douban-status on a seperate page
+2. Display the douban-status on a seperate page
 
 
 
