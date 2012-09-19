@@ -32,7 +32,7 @@ function renderJSON(status) {
         link = subject["link"][1]["@href"],
         img_src = subject["link"][2]["@href"],
         aiotitle = entry[i]["title"]["$t"];
-    fragment += '<a target="_blank" aiotitle="' + aiotitle + '" href="' + link + '"> <img src="' + img_src + '"> </a>';
+    fragment += '<a target="_blank" aiotitle="' + aiotitle + '" href="' + link + '"> <img src="' + img_src + '" width="75" height="100"> </a>';
     if (i % 3 == 2) {
       fragment += '</li>';
     }
