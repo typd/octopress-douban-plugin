@@ -6,13 +6,13 @@ This is a plugin of [Octopress](http://octopress.org/) (the most awesome blog sy
 
 At first,
 ```
-git clone git://github.com/LarryLv/octopress-douban-plugin.git
+git clone git://github.com/larrylv/octopress-douban-plugin.git
 cd octopress-douban-plugin
 cp douban.html /your-blog-root-path/source/_includes/custom/asides/
 cp douban.js /your-blog-root-path/source/javascripts/
 ```
 
-then edit your ```_configy.yml```,
+then edit your ```_config.yml```,
 
 1. add `custom/asides/douban.html` to your default_asides array.
 2. add the following configurations to the end
